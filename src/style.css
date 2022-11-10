@@ -86,6 +86,7 @@ body {
   appearance: none;
   border: 1px solid var(--icon);
   background-color: var(--background);
+  transition: 0.3s;
 }
 
 .dot-tracker .dot.current-dot {
