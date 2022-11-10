@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+
+  <body>
+    <div class="header"></div>
+    <div class="main">
+      <div class="frame">
+      <button class='nav-button left mdi mdi-menu-left'></button>
+      <button class='nav-button right mdi mdi-menu-right'></button>
+        <div class="pictures">
+          <div class="pic">
+            <img src=<%=require("../src/imgs/IMG_0358.jpeg")%> alt="">
+          </div>
+          <div class="pic">
+            <img src=<%=require("../src/imgs/IMG_0369.jpeg")%> alt="">
+          </div>
+          <div class="pic">
+            <img src=<%=require("../src/imgs/IMG_0393.jpeg")%> alt="">
+          </div>
+          <div class="pic">
+            <img src=<%=require("../src/imgs/IMG_0413.jpeg")%> alt="">
+          </div>
+          <div class="pic">
+            <img src=<%=require("../src/imgs/IMG_0457.jpeg")%> alt="">
+          </div>
+          <div class="pic">
+            <img src=<%=require("../src/imgs/IMG_0465.jpeg")%> alt="">
+          </div>
+          <div class="pic">
+            <img src=<%=require("../src/imgs/IMG_0493.jpeg")%> alt="">
+          </div>
+          <div class="pic">
+            <img src=<%=require("../src/imgs/IMG_0642.jpeg")%> alt="">
+          </div>
+        </div>
+      </div>
+      <div class="dot-tracker"></div>
+    </div>
+  </body>
 </html>

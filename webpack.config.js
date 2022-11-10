@@ -10,7 +10,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       // add title
-      title: '',
+      title: 'Image Slider',
       template: './src/template.html',
     }),
   ],

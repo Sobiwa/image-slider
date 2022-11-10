@@ -1,12 +1,93 @@
-/* @font-face {
-  font-family: 'MyFont';
-  src: url('./my-font.woff2') format('woff2'),
-    url('./my-font.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-}; */
+:root {
+  --background: #1e1e1e;
+  --icon: hsl(0, 0%, 70%);
+}
 
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   height: 100vh;
-  background-color: blue;
+  background-color: var(--background);
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  width: 80vw;
+}
+
+.pictures {
+  display: flex;
+  align-items: center;
+  transition: translate 0.4s;
+}
+
+.pic {
+  width: 80vw;
+}
+
+.pic img {
+  width: 100%;
+}
+
+.nav-button {
+  position: absolute;
+  font-size: 2rem;
+  appearance: none;
+  border: none;
+  color: var(--icon);
+  background-color: hsla(0, 0%, 12%, 0.3);
+  cursor: pointer;
+  height: min-content;
+  border-radius: 10px;
+}
+
+.nav-button:hover {
+  background-color: hsla(0, 0%, 12%, 0.5);
+}
+
+.left {
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  z-index: 1;
+}
+
+.right {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  z-index: 1;
+}
+
+.dot-tracker {
+  display: flex;
+  gap: 15px;
+}
+
+.dot-tracker .dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  appearance: none;
+  border: 1px solid var(--icon);
+  background-color: var(--background);
+}
+
+.dot-tracker .dot.current-dot {
+  background-color: var(--icon);
 }
